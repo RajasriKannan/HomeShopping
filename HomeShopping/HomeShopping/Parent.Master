@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Parent.master.cs" Inherits="HomeShopping.Parent" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>HouseHold Shopping</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="~\Stylesheets\Parent.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body class="body">
+    <form id="form1" runat="server">
+        <div class="header">
+            <h1>Household Shopping</h1>
+        </div>
+
+        <div class="w3-bar">
+            <div class="w3-bar-item">
+                Welcome <span>
+                    <asp:Label ID="lblUserName" runat="server"></asp:Label>
+                </span>
+            </div>
+            <div class="w3-bar-item w3-right" >
+                <a style="text-decoration:none" href="LoginPage(s)/Login.aspx">Logout</a>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-3 col-s-3 menu">
+                <ul>
+                    <a href="Home.aspx"><li>Home</li></a>
+                    <li>Living Room</li>
+                    <%--<a href="Kitchen.aspx"><li>Kitchen</li></a>--%>
+                    <a href="KitchenCategory.aspx"><li>Kitchen</li></a>
+                    <li>Dining </li>
+                    <li>Bed Room</li>
+                    <li>Bath Room</li>
+                    <li>Store Room</li>
+                    <li>Patio </li>
+                    <li>Garage</li>
+                </ul>
+            </div>
+            <div class="col-9 col-s-9">
+                <asp:ContentPlaceHolder ID="ParentContentPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <%--<div class="col-3 col-s-12">
+                <div class="aside">
+                    <p>this space is reserved for frequently using items</p>
+                </div>
+            </div>--%>
+
+        </div>
+        <div class="footer">
+            <p>All Rights Reserved.Powered by RajiVenkat.</p>
+        </div>
+    </form>
+</body>
+</html>

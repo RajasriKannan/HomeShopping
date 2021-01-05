@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Login.master.cs" Inherits="HomeShopping.Login1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="~\Stylesheets\Parent.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" type="text/css" href="~\Stylesheets\Login.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header">
+            <h1>Household Shopping</h1>
+        </div>
+        <div class="row">
+            <h2 class="welcome">
+                Welcome to Home Shopping, to begin Please enter your credentials!!
+            </h2>
+            
+            <div class="col-s-12 col-12 ">
+               <div >
+                   <asp:ContentPlaceHolder ID="LoginContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+               </div>
+            </div>
+            
+        </div>
+        <div class="footer">
+            <p>All Rights Reserved.Powered by RajiVenkat.</p>
+        </div>
+    </form>
+</body>
+</html>

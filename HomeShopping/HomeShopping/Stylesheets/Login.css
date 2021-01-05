@@ -1,0 +1,24 @@
+﻿.welcome {
+    text-align: center;
+    font-style: italic;
+}
+
+.login {
+    /*margin-bottom : 50%;*/
+    box-shadow: 0 10px 50px hsl(60, 100%, 50%);
+    background-color: hsl(120, 100%, 10%);
+    padding: 3%;
+    color: white;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+
+.button {
+    background-color: hsl(120, 100%, 10%);
+    box-shadow: 0 10px 50px hsl(60, 100%, 50%);
+    color: white;
+
+}
+
+
